@@ -3,11 +3,11 @@
 </pega-embed>
 <script>
     let el=document.getElementById('theEmbed');
-    consturl=newURL(window.location.toLocaleString());
+    const url=newURL(window.location.toLocaleString());
     console.log(url);
-    constSParams=url.searchParams;
+    const SParams=url.searchParams;
     console.log(SParams);
-    constID=SParams.get('ID');
+    const ID=SParams.get('ID');
     console.log(ID);
     el.setAttribute("assignmentID",ID);
     el.load();
