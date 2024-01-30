@@ -1,4 +1,15 @@
 <scriptsrc='https://prod-cdn.constellation.pega.io/8.23.1-242/react/prod/pega-embed.js' ></script>
-<pega-embedid='theEmbed' action='openAssignment' assignmentID='ASSIGN-WORKLIST ARET-EIB-WORK R-50!PROJECTS_FLOW' 
+<pega-embedid='theEmbed' action='openAssignment' assignmentID='' 
 casePage='full' appAlias='eib-european-investment-bank' pegaServerUrl='https://areteanseib.pegatsdemo.com/prweb/app/eib-european-investment-bank/' staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.1-242/react/prod/' authService='pega' userIdentifier='OSUser' password='UnVsZXNAMjAyNA==' deferLoad='true' clientId='11577456308292679996' style='width:100%'>
 </pega-embed>
+<script>
+    letel=document.getElementById("theEmbed");
+    consturl=newURL(window.location.toLocaleString());
+    //console.log(url);
+    constSParams=url.searchParams;
+    //console.log(SParams);
+    constID=SParams.get('ID');
+    //console.log(ID);
+    el.setAttribute("assignmentID",ID);
+    el.load();
+    </script>
