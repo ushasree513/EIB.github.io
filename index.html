@@ -4,11 +4,11 @@
 <script>
     let el=document.getElementById('theEmbed');
     consturl=newURL(window.location.toLocaleString());
-    //console.log(url);
+    console.log(url);
     constSParams=url.searchParams;
-    //console.log(SParams);
+    console.log(SParams);
     constID=SParams.get('ID');
-    //console.log(ID);
+    console.log(ID);
     el.setAttribute("assignmentID",ID);
     el.load();
 </script>
