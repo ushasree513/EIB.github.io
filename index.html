@@ -3,7 +3,7 @@
 </pega-embed>
 <script>
     let el=document.getElementById('theEmbed');
-    const url=newURL(window.location.toLocaleString());
+    const url= new URL(window.location.toLocaleString());
     console.log(url);
     const SParams=url.searchParams;
     console.log(SParams);
