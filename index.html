@@ -1,6 +1,7 @@
 <script src='https://prod-cdn.constellation.pega.io/8.23.1-242/react/prod/pega-embed.js' ></script>
-<pega-embed id='theEmbed' action='openAssignment' assignmentID='' casePage='full' appAlias='eib-european-investment-bank' pegaServerUrl='https://areteanseib.pegatsdemo.com/prweb/' staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.1-242/react/prod/' authService='pega' userIdentifier='OSUser' password='UnVsZXNAMjAyNA==' deferLoad='true' clientId='17175374712945216499' style='width:100%'>
+<pega-embed id='theEmbed' action='openCase' caseID='' casePage='full' appAlias='eib-european-investment-bank' pegaServerUrl='https://areteanseib.pegatsdemo.com/prweb/' staticContentUrl='https://prod-cdn.constellation.pega.io/8.23.1-242/react/prod/' authService='pega' userIdentifier='OSUser' password='UnVsZXNAMjAyNA==' deferLoad='true' clientId='17175374712945216499' style='width:100%'>
 </pega-embed>
+
 <script>
     let el = document.getElementById("theEmbed");
     const url = new URL(window.location.toLocaleString());
@@ -9,7 +10,7 @@
     console.log(SParams);
     const ID = SParams.get("ID");
     console.log(ID);
-    el.setAttribute("assignmentID", ID);
+    el.setAttribute("caseID", ID);
     el.load(); 
     
     </script>
